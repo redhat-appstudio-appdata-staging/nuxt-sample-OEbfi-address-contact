@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nuxt-sample
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/johnmcollier-tenant/nuxt-sample/nuxt-sample@sha256:53e80ef621ae0d4fde562a8ab37692a8a991491bca07f12dd95cf7e38a807790
+        name: my-nodejs
+        resources: {}
+status: {}
