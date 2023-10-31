@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nuxt-sample
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/redhat-user-workloads-stage/johnmcollier-tenant/nuxt-sample/nuxt-sample@sha256:53e80ef621ae0d4fde562a8ab37692a8a991491bca07f12dd95cf7e38a807790
         name: my-nodejs
         ports:
         - containerPort: 3000
